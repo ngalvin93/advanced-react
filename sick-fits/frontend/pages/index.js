@@ -1,21 +1,25 @@
-import React, { Component } from 'react'
+// Next.js takes care of the import for the functional component
+// import React, { Component } from 'react'
+import Link from 'next/link'
 
-class index extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Hello World!</h1>
-            </div>
-        )
-    }
-}
-
-// const index = props => {
-//     return(
-//         <React.Fragment>
-//             <p>Hello!</p>
-//         </React.Fragment>
-//     )
+// class Home extends Component {
+//     render() {
+//         return (
+//             <div>
+//                 <h1>Hello World!</h1>
+//             </div>
+//         )
+//     }
 // }
 
-export default index
+const Home = props => {
+    return(
+        <React.Fragment>
+            <Link href="/sell">
+                <a>Sell!</a>
+            </Link>
+        </React.Fragment>
+    )
+}
+
+export default Home
