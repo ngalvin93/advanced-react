@@ -1,12 +1,15 @@
 import App, { Container } from 'next/app'
+import Page from '../components/Page'
 
+// Component in this case is the component that is passed via props
 class MyApp extends App {
     render() {
         const { Component } = this.props
         return(
             <Container>
-                <p>I'm on every page!</p>
-                <Component />
+                <Page>
+                    <Component />
+                </Page>
             </Container>
         )
     }

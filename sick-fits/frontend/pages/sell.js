@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Sell = props => {
     return(
         <React.Fragment>
-            <Link href="/index">
+            <Link href="/">
                 <a>Home!</a>
             </Link>
         </React.Fragment>
